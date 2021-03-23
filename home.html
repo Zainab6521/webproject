@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+<!-- {% block title %}
+    home page
+{% endblock %} -->
+
+{% block content %}
+<header>
+    <a href="{{ url_for('home') }}"><image class="logo" src="{{ url_for('static', filename='images/eventive.png')}}"></image>
+    <nav>
+        <ol class="nav-links">
+            <li><a href="#Section1">Home</a></li>
+            <li><a href="#Section2">Blog</a></li>
+            <li><a href="#Section3">Package</a></li>
+            <li><a href="#Section4">Gallery</a></li>
+            <li><a href="#Section5">Contact</a></li>
+            <!-- <li><a href="{{ url_for('about') }}">about</a></li> -->
+        </ol>
+    </nav>
+    <a class="login" href="#"><button>login</button></a>
+    
+</header>
+<!-- <section>
+    <div class="welcome-text">
+        <h1>Welcome to <span>eventive!!</span></h1>
+        <h2>Let's make your event with eventive</h2>
+</section> -->
+<body>
+    <div id="Section1">
+        <h1>Welcome! to Eventive</h1>
+    </div>
+    <div id="Section2">
+        <h1>Our Journey!</h1>
+    </div>
+    <div id="Section3">
+        <h1>Eventive is your PocketFriend.</h1>
+    </div>
+    <div id="Section4">
+        <!-- <img src="{{ url_for('static', filename='images/table.jpg')}}" alt="eventive"> -->
+        <h1>Look at this Satisfied "EventBombing" of our CLIENTS! </h1>
+    </div>
+    <div id="Section5">
+        <h1>Be A Part of Our Journey___subsribe to stay informed.</h1>
+    </div>
+    
+
+</body>
+    
+    
+{% endblock content %}
